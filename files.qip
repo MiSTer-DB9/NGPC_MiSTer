@@ -1,11 +1,11 @@
 # Core PLL: 49.152 MHz c0 and 98.304 MHz c1 from the 50 MHz reference.
 set_global_assignment -name QIP_FILE rtl/pll.qip
 
-set_global_assignment -name VERILOG_FILE rtl/mem/cache_ram.v
-set_global_assignment -name SYSTEMVERILOG_FILE rtl/mem/cache_ram_be.sv
+set_global_assignment -name VERILOG_FILE rtl/Mem/cache_ram.v
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/Mem/cache_ram_be.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/cheats/ngp_cheat_loader.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/cheats/ngp_cheat_engine.sv
-set_global_assignment -name SYSTEMVERILOG_FILE rtl/mem/sdram.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/Mem/sdram.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/soc/ngp_clocks.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/t900/t900_regfile.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/t900/t900_biu.sv
@@ -90,19 +90,19 @@ set_global_assignment -name SYSTEMVERILOG_FILE rtl/snd/z80/ngp_z80.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/snd/ngp_snd.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/snd/t6w28.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/snd/ngp_mixer.sv
-set_global_assignment -name SYSTEMVERILOG_FILE rtl/mem/cart_sdram.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/Mem/cart_sdram.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/cart/ngp_cart_sdram.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/cart/ngp_cart_rom.sv
 
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/Savestates/savestates.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/Savestates/statemanager.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/Savestates/savestate_ui.sv
-set_global_assignment -name VERILOG_FILE rtl/mem/ddram.v
+set_global_assignment -name VERILOG_FILE rtl/Mem/ddram.v
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/Savestates/ngp_ss_glue.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/Savestates/ngp_sparse_state_manifest.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/Savestates/ngp_sparse_state_store.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rtl/Savestates/ngp_savestate.sv
 
 set_global_assignment -name SDC_FILE NGPC.sdc
-set_global_assignment -name SDC_FILE rtl/mem/sdram.sdc
+set_global_assignment -name SDC_FILE rtl/Mem/sdram.sdc
 set_global_assignment -name SYSTEMVERILOG_FILE NGPC.sv
